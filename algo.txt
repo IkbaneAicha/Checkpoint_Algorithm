@@ -1,0 +1,29 @@
+Algorithm AnalyzeSentence
+    Input: sentence (a string ending with a period)
+    Output: length (integer), word_count (integer), vowel_count (integer)
+
+    // Initialize counters
+    Set length to 0
+    Set word_count to 1
+    Set vowel_count to 0
+    Set vowels to "aeiouAEIOU"
+
+    // Process characters in sentence
+    For each character in sentence Do
+        If character = '.' Then
+            Break
+        
+        Increment length by 1
+        
+        If character is in vowels Then
+            Increment vowel_count by 1
+        
+        If character = ' ' Then
+            Increment word_count by 1
+    End For
+
+    //results
+
+    Return length, word_count, vowel_count
+End Algorithm
+
